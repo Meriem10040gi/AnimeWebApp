@@ -1,6 +1,68 @@
-# AnimeW
+# MRWS Anime
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
+Introduction
+
+This project is a modern anime streaming web application designed to provide users with a simple, fast, and clean way to browse, search, and watch their favorite anime shows online.
+
+The frontend is developed using Angular with standalone components for a modular and highly scalable architecture.
+The backend is powered by a custom API (based on the open-source Consumet API) that aggregates anime data from third-party sources like Zoro.
+
+### The application supports:
+
+* Browsing popular animes
+
+* Browsing recently released animes
+
+* Browsing anime categories
+
+* Searching animes by title (currently in development)
+
+* Searching animes by category
+
+* Viewing anime details (synopsis, genres, characters ...)
+
+* Streaming episodes from Zoro webSite using provided urls
+
+## Key Technologies
+
+Angular (Frontend Framework)
+
+TypeScript (Both frontend and backend)
+
+
+## Installation
+### Locally
+installing requirements is simple.
+
+Run the following commands to clone **the project repository**, and install the dependencies.
+
+
+```sh 
+$ git clone  https://github.com/Meriem10040gi/AnimeWebApp.git
+$ cd AnimeWebApp
+$ npm install #or yarn install
+```
+Now follow these commands to clone **the Consumet API repository**, and install the dependencies.
+
+```sh 
+$ cd consumet
+$ git clone https://github.com/consumet/api.consumet.org.git
+$ cd api.consumet.org
+$ npm install #or yarn install
+```
+
+start Consumet API ***from dir = AnimeWebApp/consumet/api.consumet.org***
+
+```sh
+$ npm start # It must run on the port 3000 
+```
+
+start the server ***from dir = AnimeWebAp*** 
+
+```sh 
+$ npm start #or yarn start
+```
 
 ## Development server
 
