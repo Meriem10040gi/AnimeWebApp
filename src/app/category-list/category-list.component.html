@@ -1,0 +1,20 @@
+<section class="py-5 bg-black text-center">
+  <div class="container">
+    <p class="text-uppercase text-danger small fw-bold mb-2">Categories</p>
+    <h2 class="fw-bold mb-4">{{description}}</h2>
+    <div class="d-flex justify-content-end mb-3">
+      <a href="/category"><button class="btn view-all-btn" [hidden]="hide">View All</button></a>
+    </div>
+
+    <div class="row justify-content-center g-4">
+
+      <div class="col-6 col-sm-4 col-md-3" *ngFor="let category of categories">
+        <div class="bg-primary text-white rounded-top text-center py-1 small fw-bold">{{category.name}}</div>
+        <div class="bg-light rounded-bottom overflow-hidden">
+          <a [routerLink] = "['/category', category.mal_id]"><img src="/assets/images/cat.jpg" class="img-fluid rounded-bottom" alt="{{category.name}}"></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

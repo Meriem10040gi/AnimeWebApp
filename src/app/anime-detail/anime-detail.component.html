@@ -1,0 +1,94 @@
+<section class="container my-5">
+  <div class="hero-image d-flex justify-content-center  position-relative" style="background: url('/assets/images/bg6.jpg') center center/cover no-repeat;">
+    <div class="hero-overlay"></div>
+    <div class="card border-0 shadow-lg position-relative" style="width: 30%; margin-top: 3%; height: 60%; border-radius: 20px; z-index: 2;">
+      <img src="{{anime.images.jpg.large_image_url}}" class="card-img-top" alt="Game Image" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+    </div>
+    <div class="hero-text">
+      <h1 class="display-4 fw-bold">{{anime.title}}</h1>
+    </div>
+  </div>
+</section>
+<section class="container mb-5">
+  <h2 class="mb-3"><b>Description</b></h2>
+  <p>{{anime.synopsis}}</p>
+</section>
+<section class="container my-5">
+  <div class="row g-4">
+    <div class="col-md-4 text-center">
+      <div class="card shadow-sm border-0 rounded-4 overflow-hidden">
+        <img [src]="anime?.images.jpg.large_image_url" alt="Poster" class="w-100 h-100 object-fit-cover" style="max-height: 500px;">
+      </div>
+    </div>
+    <div class="col-md-8">
+      <h2 class="fw-bold mb-3">{{ anime?.title }}</h2>
+      <div class="row row-cols-2 row-cols-md-3 g-3 mt-4">
+        <div class="col">
+          <div class="bg-dark-subtle p-3 rounded text-center shadow-sm">
+            <small class="text-uppercase text-secondary">Score</small>
+            <div class="fw-bold fs-5 text-danger">{{ anime?.score }}</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-dark-subtle p-3 rounded text-center shadow-sm">
+            <small class="text-uppercase text-secondary">Classement</small>
+            <div class="fw-bold fs-5">#{{ anime?.rank }}</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-dark-subtle p-3 rounded text-center shadow-sm">
+            <small class="text-uppercase text-secondary">Popularité</small>
+            <div class="fw-bold fs-5">#{{ anime?.popularity }}</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-dark-subtle p-3 rounded text-center shadow-sm">
+            <small class="text-uppercase text-secondary">Épisodes</small>
+            <div class="fw-bold fs-5">{{ anime?.episodes }}</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-dark-subtle p-3 rounded text-center shadow-sm">
+            <small class="text-uppercase text-secondary">Type</small>
+            <div class="fw-bold fs-5">{{ anime?.type }}</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-dark-subtle p-3 rounded text-center shadow-sm">
+            <small class="text-uppercase text-secondary">Source</small>
+            <div class="fw-bold fs-5">{{ anime?.source }}</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-dark-subtle p-3 rounded text-center shadow-sm">
+            <small class="text-uppercase text-secondary">Season</small>
+            <div class="fw-bold fs-5">{{ anime?.season }}</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-dark-subtle p-3 rounded text-center shadow-sm">
+            <small class="text-uppercase text-secondary">Année</small>
+            <div class="fw-bold fs-5">{{ anime?.year }}</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="bg-dark-subtle p-3 rounded text-center shadow-sm">
+            <small class="text-uppercase text-secondary">Studio</small>
+            <div class="fw-bold fs-5">{{ anime?.studios[0]?.name }}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <p><strong>Rating :</strong> {{ anime?.rating }}</p>
+        <p><strong>Status :</strong> {{ anime?.status }}</p>
+        <p><strong>Genres :</strong>
+          <span *ngFor="let genre of anime?.genres; let i = index">
+              {{ genre.name }}<span *ngIf="i < anime.genres.length - 1">, </span>
+          </span>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>

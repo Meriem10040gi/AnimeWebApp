@@ -1,0 +1,56 @@
+.view-all-btn {
+  background-color: #ff5e7d;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.game-card {
+  background-color: #0b0b2d;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  font-family: "Times New Roman", sans-serif;
+}
+
+.game-card img {
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.game-card p {
+  font-size: 0.8rem;
+  color: #ccc;
+  margin-top: 10px;
+  flex-grow: 0;
+}
+
+.game-card h6 {
+  font-size: 0.8rem;
+  color: #fff;
+  flex-grow: 0;
+}
+
+.explore-btn {
+  background-color: #ff4d6d;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #ff3355;
+}
+.anime-section{
+  margin-bottom: 80px;
+}

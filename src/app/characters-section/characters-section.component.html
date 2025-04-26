@@ -1,0 +1,19 @@
+<section class="container mb-5">
+  <div class="text-center mb-4">
+    <h2 class="text-danger fw-bold">Main Characters</h2>
+  </div>
+  <div class="row g-4">
+    <div class="col-sm-6 col-md-3 col-lg-2" *ngFor="let character of characters">
+      <div class="text-center">
+        <img
+           src="{{character.character.images.jpg.image_url }}"
+          class="character-img mb-2"
+          [alt]="character.character.name">
+
+        <h5>{{ character.character.name }}</h5>
+        <p><b>Role:</b> {{ character.role }}</p>
+        <p *ngIf="character.voice_actors?.length"><b>Voice:</b> {{ character.voice_actors[0]?.person.name }}</p>
+      </div>
+    </div>
+  </div>
+</section>

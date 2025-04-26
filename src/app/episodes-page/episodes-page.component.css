@@ -1,0 +1,16 @@
+.explore-btn {
+  background-color: red;
+  color: #fff ;
+  border-radius: 15px;
+  font-size: 12px;
+  padding: 5px 15px;
+}
+.card{
+  background-color: #00001f;
+}
+
+h2{
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7),
+  0px 0px 20px rgba(255, 255, 255, 0.2);
+  color: #fff;
+}

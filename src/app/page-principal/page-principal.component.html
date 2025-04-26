@@ -1,0 +1,9 @@
+<app-header></app-header>
+<app-banner></app-banner>
+<app-category-list [categories]="categories" [hide]="false" [description]="'Top Categories'"></app-category-list>
+<div class="container py-5 text-center">
+  <small class="text-danger text-uppercase fw-bold ">Animes</small>
+    <app-anime-list [animes]="RLanimes" [hide]="false" [description]="'Recently Released '" [link]="'new-released'" ></app-anime-list>
+    <app-anime-list [animes]="MPanimes" [hide]="false" [description]="'Most Popular'" [link]="'most-popular'"></app-anime-list>
+</div>
+  <app-footer></app-footer>

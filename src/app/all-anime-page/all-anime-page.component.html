@@ -1,0 +1,11 @@
+<app-header></app-header>
+<div class="container py-5 text-center">
+  <small class="text-danger text-uppercase fw-bold ">Animes</small>
+  <app-anime-list [animes]="animes" [hide]="true" [description]="description" [link]="'#'"></app-anime-list>
+  <div class="d-flex justify-content-center mt-4">
+    <button class="btn btn-secondary me-2" (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+    <span class="align-self-center mx-2">Page {{ currentPage }}</span>
+    <button class="btn btn-secondary" (click)="nextPage()" [disabled]="!hasNextPage">Next</button>
+  </div>
+</div>
+<app-footer></app-footer>

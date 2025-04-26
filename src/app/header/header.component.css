@@ -1,0 +1,37 @@
+nav {
+  font-family: 'Times New Roman', sans-serif;
+  text-decoration-style: solid;
+}
+.nav-link {
+  color: white !important;
+}
+
+.btn-signin {
+  background: #ff4c61;
+  color: white;
+  border-radius: 30px;
+  padding: 5px 20px;
+  font-size: 14px;
+}
+.btn-signin:hover {
+  background: pink;
+}
+.search-btn {
+  background-color: #ff4c61;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 25px;
+  border: none;
+}
+
+.price-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #22a6f0;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
