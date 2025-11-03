@@ -10,9 +10,9 @@ The backend is powered by a custom API (based on the open-source Consumet API) t
 
 ### The application supports:
 
-* Browsing popular animes
+* Browsing popular animes .
 
-* Browsing recently released animes
+* Browsing recently released animes .
 
 * Browsing anime categories
 
